@@ -1,0 +1,11 @@
+theme: jekyll-theme-cayman
+title: 제일한의원
+email: info@thefirst.clinic
+description: 제일한의원 공식 웹사이트
+baseurl: "" 
+url: "https://thefirst.clinic"
+
+# 병원 정보 (Footer용)
+biz_number: "842-36-01566"
+owner: "황지영"
+phone: "02-926-3805"
