@@ -1,7 +1,7 @@
 theme: jekyll-theme-cayman
 title: 제일한의원
 email: info@thefirst.clinic
-description: 제일한의원 공식 웹사이트
+description: 정교한 진단과 세심한 치료로 당신의 회복과 균형을 함께합니다. 서울 성북구 성신여대입구역 6번 출구 도보 3분.
 baseurl: "" 
 url: "https://thefirst.clinic"
 
@@ -9,3 +9,11 @@ url: "https://thefirst.clinic"
 biz_number: "842-36-01566"
 owner: "황지영"
 phone: "02-926-3805"
+
+# Language settings
+lang: ko_KR
+
+# Plugins (GitHub Pages에서 자동 지원)
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
