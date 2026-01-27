@@ -1,45 +1,23 @@
 .logo-container {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .logo {
-    max-width: 500px;
+    max-width: 250px;
     width: 90%;
     height: auto;
-    color: #283a88;
-    /* 로고 색상 */
-}
-
-/* 다양한 색상 버전 */
-.logo-white {
-    color: white;
-}
-
-.logo-dark {
-    color: #1a1a1a;
-}
-
-.logo-gray {
-    color: #666;
-}
-
-/* Hover 효과 */
-.logo:hover {
-    color: #1e2d6b;
-    /* 어두운 블루 */
-    transition: color 0.3s ease;
 }
 
 /* 반응형 크기 */
 @media (max-width: 768px) {
     .logo {
-        max-width: 400px;
+        max-width: 220px;
     }
 }
 
 @media (max-width: 480px) {
     .logo {
-        max-width: 280px;
+        max-width: 180px;
     }
 }
