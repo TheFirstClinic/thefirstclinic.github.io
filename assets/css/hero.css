@@ -42,6 +42,12 @@
     padding-left: 6%;
 }
 
+/* Text wrapper to control width */
+.hero-text-wrapper {
+    max-width: 550px;
+    /* 두 문장의 너비를 제한 */
+}
+
 .hero-title {
     font-size: clamp(1.4rem, 4vw, 30px);
     margin-bottom: 20px;
@@ -103,6 +109,11 @@
         height: 10px;
         border-width: 2px;
     }
+
+    .hero-text-wrapper {
+        max-width: 600px;
+        /* 큰 화면에서는 조금 더 넓게 */
+    }
 }
 
 /* Very small mobile */
@@ -128,11 +139,20 @@
         height: 7px;
         border-width: 1.5px;
     }
+
+    .hero-text-wrapper {
+        max-width: 90%;
+        /* 작은 화면에서는 대부분의 공간 사용 */
+    }
 }
 
 /* Mobile */
 @media (max-width: 480px) {
     .hero-blur-overlay {
         width: 85%;
+    }
+
+    .hero-text-wrapper {
+        max-width: 85%;
     }
 }
