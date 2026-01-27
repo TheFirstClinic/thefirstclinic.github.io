@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div
-    style="max-width: 800px; margin: 0 auto; padding: 60px 20px; text-align: center; font-family: 'Pretendard', sans-serif;">
+    style="max-width: 1200px; margin: 0 auto; padding: 60px 20px; text-align: center; font-family: 'Pretendard', sans-serif;">
 
     <h1 style="color: #283a88; font-size: 3.2em; margin-bottom: 50px; letter-spacing: -1px; font-weight: 800;">제일한의원
     </h1>
@@ -24,38 +24,6 @@ layout: default
         <p style="color: #888; font-size: 0.9em; margin-top: 12px;">문의 전화 환영합니다</p>
     </div>
 
-    <div style="text-align: left; display: flex; flex-wrap: wrap; gap: 40px; padding: 0 10px; margin-bottom: 40px;">
-        <div style="flex: 1; min-width: 280px; border-left: 3px solid #283a88; padding-left: 20px;">
-            <h4 style="color: #283a88; margin: 0 0 15px 0; font-size: 1.2em;">📍 오시는 길</h4>
-            <a href="https://map.kakao.com/link/to/제일한의원,37.5927,127.0165" target="_blank"
-                style="text-decoration: none; color: inherit;">
-                <p style="margin: 5px 0; font-weight: 500;">서울시 성북구 아리랑로 28, 2층</p>
-                <p style="font-size: 0.9em; color: #888; margin: 0;">(성신여대입구역 6번 출구 도보 3분)</p>
-            </a>
-        </div>
-        <div style="flex: 1; min-width: 280px; border-left: 3px solid #283a88; padding-left: 20px;">
-            <h4 style="color: #283a88; margin: 0 0 15px 0; font-size: 1.2em;">⏰ 진료시간</h4>
-            <p style="margin: 5px 0; font-weight: 500;">평일: 09:00 - 18:00 (화요일 야간 20:00)</p>
-            <p style="margin: 5px 0; font-weight: 500;">토요일: 09:00 - 14:00</p>
-            <p style="font-size: 0.9em; color: #e74c3c; margin: 5px 0 0 0;">※ 일요일 · 공휴일 휴진 (평일 점심 13시-14시)</p>
-        </div>
-    </div>
-
-    <div
-        style="width: 100%; border: 1px solid #eee; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-        <div id="daumRoughmapContainer1769414770029" class="root_daum_roughmap root_daum_roughmap_landing"
-            style="width:100%;"></div>
-
-        <script charset="UTF-8" class="daum_roughmap_loader_script"
-            src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-
-        <script charset="UTF-8">
-            new daum.roughmap.Lander({
-                "timestamp": "1769414770029",
-                "key": "25u5uwhat538",
-                "mapWidth": "100%",
-                "mapHeight": "360"
-            }).render();
-        </script>
-    </div>
+    <!-- Clinic Information Section -->
+    {% include clinic-info.html %}
 </div>
