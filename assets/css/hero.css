@@ -1,0 +1,138 @@
+/* Hero Section Styles */
+.hero-section {
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 60px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+}
+
+.hero-bg-image {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.hero-blur-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 85%;
+    height: 100%;
+    background-image: url('../img/hero-herbal-medicine.png');
+    background-size: cover;
+    background-position: left center;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    z-index: 1;
+}
+
+.hero-text-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    z-index: 2;
+    padding-left: 6%;
+}
+
+.hero-title {
+    font-size: clamp(1.4rem, 4vw, 30px);
+    margin-bottom: 20px;
+    color: #000;
+    line-height: 1.4;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
+}
+
+/* Decorative divider line with diamond */
+.hero-divider {
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.3) 80%, transparent);
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-divider::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    border: 1.5px solid rgba(0, 0, 0, 0.4);
+    transform: rotate(45deg);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.9);
+}
+
+.hero-sub {
+    font-size: clamp(1.25rem, 3.2vw, 24px);
+    color: #222;
+    line-height: 1.6;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+    margin-top: 0;
+}
+
+/* Tablet and above */
+@media (min-width: 768px) {
+    .hero-text-container {
+        padding-left: 8%;
+    }
+
+    .hero-blur-overlay {
+        width: 60%;
+    }
+
+    .hero-divider {
+        margin: 25px 0;
+    }
+
+    .hero-divider::before {
+        width: 10px;
+        height: 10px;
+        border-width: 2px;
+    }
+}
+
+/* Very small mobile */
+@media (max-width: 340px) {
+    .hero-title {
+        font-size: 1.35rem;
+    }
+
+    .hero-sub {
+        font-size: 1.15rem;
+    }
+
+    .hero-text-container {
+        padding-left: 4%;
+    }
+
+    .hero-divider {
+        margin: 15px 0;
+    }
+
+    .hero-divider::before {
+        width: 7px;
+        height: 7px;
+        border-width: 1.5px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .hero-blur-overlay {
+        width: 85%;
+    }
+}
