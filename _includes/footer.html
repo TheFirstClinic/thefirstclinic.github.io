@@ -1,48 +1,71 @@
-<!-- footer.html -->
-<footer style="
-    margin-top: 20px; 
-    padding: 25px 60px 60px 60px;
-    border-top: 1px solid #e0e0e0;
-    text-align: center;">
-
+<footer
+    style="background-color: #f8f9fa; padding: 40px 20px; margin-top: 80px; font-size: 0.9em; color: #666; line-height: 1.5;">
     <div style="max-width: 1200px; margin: 0 auto;">
-        <!-- Business information -->
-        <p style="
-            margin: 0 0 12px 0;
-            font-size: 18px;
-            font-weight: 400;
-            line-height: 28px;
-            color: rgb(34, 34, 34);">
+        <!-- Desktop version (single line, center) -->
+        <p class="footer-desktop" style="margin: 0; text-align: center;">
             사업자등록번호: {{ site.biz_number }} |
             대표자명: {{ site.owner }} |
-            이메일: <a href="mailto:{{ site.email }}" style="color: rgb(34, 34, 34); text-decoration: none;">{{ site.email
-                }}</a> |
-            전화: <a href="tel:{{ site.phone }}" style="color: rgb(34, 34, 34); text-decoration: none;">{{ site.phone
-                }}</a>
+            이메일: {{ site.email }} |
+            전화: {{ site.phone }}
         </p>
 
-        <!-- Copyright -->
-        <p style="
-            margin: 5px 0 0 0;
-            font-family: 'Pretendard', sans-serif;
-            font-size: 18px;
-            font-weight: 400;
-            color: #666;
-            letter-spacing: 1px;">
+        <!-- Mobile version (multi-line, left) -->
+        <div class="footer-mobile" style="display: none; text-align: left;">
+            <p style="margin: 5px 0;">사업자등록번호: {{ site.biz_number }}</p>
+            <p style="margin: 5px 0;">대표자명: {{ site.owner }}</p>
+            <p style="margin: 5px 0;">이메일: {{ site.email }}</p>
+            <p style="margin: 5px 0;">전화: {{ site.phone }}</p>
+        </div>
+
+        <!-- Copyright - Desktop (center) -->
+        <p class="copyright-desktop" style="margin-top: 15px; font-size: 0.95em; color: #999; text-align: center;">
             ©2026 The First Clinic of Korean Medicine 제일한의원
         </p>
+
+        <!-- Copyright - Mobile (left) -->
+        <div class="copyright-mobile"
+            style="display: none; margin-top: 15px; font-size: 0.95em; color: #999; text-align: left;">
+            <p style="margin: 3px 0;">©2026 The First Clinic of Korean Medicine</p>
+            <p style="margin: 3px 0;">제일한의원</p>
+        </div>
     </div>
 
-    <!-- Mobile responsive style -->
     <style>
-        @media (max-width: 768px) {
-            footer {
-                padding: 25px 20px 60px 20px;
+        /* Desktop: single line */
+        @media (min-width: 769px) {
+            .footer-desktop {
+                display: block !important;
             }
 
-            footer p {
-                font-size: 16px;
-                line-height: 24px;
+            .footer-mobile {
+                display: none !important;
+            }
+
+            .copyright-desktop {
+                display: block !important;
+            }
+
+            .copyright-mobile {
+                display: none !important;
+            }
+        }
+
+        /* Mobile: multi-line */
+        @media (max-width: 768px) {
+            .footer-desktop {
+                display: none !important;
+            }
+
+            .footer-mobile {
+                display: block !important;
+            }
+
+            .copyright-desktop {
+                display: none !important;
+            }
+
+            .copyright-mobile {
+                display: block !important;
             }
         }
     </style>
