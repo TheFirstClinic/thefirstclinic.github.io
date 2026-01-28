@@ -126,11 +126,28 @@
         border-bottom: 1px solid #eee;
     }
 
+    /* 모바일 드롭다운 메뉴 스타일 */
     .nav-mobile-menu a {
         display: block;
-        padding: 15px;
+        padding: 18px 15px;
+        background: #fafafa;
+        color: #444;
+        text-decoration: none;
         text-align: center;
-        border-top: 1px solid #f9f9f9;
+        font-weight: 500;
+        border-bottom: 1px solid #eee;
+        transition: background 0.2s;
+    }
+
+    /* 마지막 메뉴 하단 선 제거 */
+    .nav-mobile-menu a:last-child {
+        border-bottom: none;
+    }
+
+    /* 터치 피드백 */
+    .nav-mobile-menu a:active {
+        background: #f0f0f0;
+        color: #283a88;
     }
 
     /* 체크박스 체크 시 메뉴 표시 */

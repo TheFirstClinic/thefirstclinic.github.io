@@ -80,6 +80,15 @@
                     "mapWidth": "100%",
                     "mapHeight": "420"
                 }).render();
+
+                // 추가: 지도가 생성된 후 부모 너비에 맞게 강제 조정
+                window.onload = function () {
+                    const mapContainer = document.querySelector('.root_daum_roughmap');
+                    if (mapContainer) {
+                        mapContainer.style.width = '100%';
+                        mapContainer.querySelector('.roughmap_canvas').style.width = '100%';
+                    }
+                };
             </script>
         </div>
     </div>

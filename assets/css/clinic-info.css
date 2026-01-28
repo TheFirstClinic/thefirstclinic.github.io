@@ -27,11 +27,11 @@
     line-height: 1.7;
 }
 
-.clinic-info-table > tbody > tr {
+.clinic-info-table>tbody>tr {
     vertical-align: top;
 }
 
-.clinic-info-table > tbody > tr.valign-middle {
+.clinic-info-table>tbody>tr.valign-middle {
     vertical-align: middle;
 }
 
@@ -120,7 +120,7 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 /* ========== 반응형: 태블릿/모바일 ========== */
@@ -185,7 +185,7 @@
     }
 
     .map-container iframe,
-    .map-container > div {
+    .map-container>div {
         height: 320px;
     }
 }
