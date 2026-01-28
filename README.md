@@ -71,8 +71,11 @@ bundle exec jekyll serve
 * **주요 기능**: 실시간 방문자 추적, 유입 경로 분석, 클릭 이벤트 측정 가능.
 
 ### 2. 검색 엔진 최적화 (SEO)
-* **Google Search Console**: 소유권 확인 메타 태그가 `default.html`에 삽입되어 있습니다.
-* **구조화 데이터 (JSON-LD)**: 검색 엔진이 한의원 정보(진료시간, 위치 등)를 정확히 파악하도록 `MedicalBusiness` 스키마가 적용되어 있습니다.
+* **Google Search Console**: 소유권 확인 메타 태그가 `_includes/head.html`에 삽입되어 있습니다.
+* **Naver Search Advisor**: 네이버 검색 등록을 위한 인증 메타 태그가 설정되어 있습니다.
+* **구조화 데이터 (JSON-LD)**:
+  - `MedicalBusiness` 스키마: 한의원 정보(진료시간, 위치, 의료진 등)
+  - `WebSite` 스키마: 사이트명 및 대체 이름(성신여대 제일한의원, The First Clinic)
 * **Open Graph & Twitter Cards**: 카카오톡, 페이스북 공유 시 미리보기 이미지와 설명이 나타나도록 설정되었습니다.
 
 ## 주의사항
