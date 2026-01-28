@@ -61,6 +61,20 @@ bundle exec jekyll serve
 - assets/: 이미지, 스타일시트(CSS), 자바스크립트(JS)
 - index.html: 메인 랜딩 페이지 콘텐츠
 
+## 데이터 분석 및 마케팅 설정
+
+이 프로젝트는 방문자 분석 및 검색 엔진 최적화를 위해 아래 도구들이 설정되어 있습니다.
+
+### 1. Google Analytics 4 (GA4)
+* **측정 ID**: `G-MP7C1W2994`
+* **설정 방식**: `_includes/google-analytics.html`에 추적 코드를 분리하여 관리하며, `_layouts/default.html`의 `<head>` 영역에서 호출합니다.
+* **주요 기능**: 실시간 방문자 추적, 유입 경로 분석, 클릭 이벤트 측정 가능.
+
+### 2. 검색 엔진 최적화 (SEO)
+* **Google Search Console**: 소유권 확인 메타 태그가 `default.html`에 삽입되어 있습니다.
+* **구조화 데이터 (JSON-LD)**: 검색 엔진이 한의원 정보(진료시간, 위치 등)를 정확히 파악하도록 `MedicalBusiness` 스키마가 적용되어 있습니다.
+* **Open Graph & Twitter Cards**: 카카오톡, 페이스북 공유 시 미리보기 이미지와 설명이 나타나도록 설정되었습니다.
+
 ## 주의사항
 
 - .gitignore: _site, .jekyll-cache, .bundle 등 빌드 과정에서 생성되는 임시 파일들은 Git 저장소에 포함되지 않도록 설정되어 있습니다.
