@@ -1,0 +1,8 @@
+- name: "한의원 소개"
+  link: "/about"
+- name: "원장 소개"
+  link: "/about-doctor"
+- name: "진료 안내"
+  link: "/treatments"
+- name: "오시는 길"
+  link: "/location"

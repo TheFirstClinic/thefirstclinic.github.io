@@ -1,0 +1,140 @@
+/* 기본 설정 */
+.site-header {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 로고 */
+.nav-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.nav-logo img {
+    height: 27px;
+    width: auto;
+    display: block;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+/* 안전 코드: 미사용 클래스 숨김 */
+.logo-container {
+    display: none;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-item {
+    font-weight: 500;
+    color: #333;
+    transition: 0.3s;
+}
+
+.nav-item:hover {
+    color: #283a88;
+}
+
+/* 모바일 전용 요소 숨기기 */
+.nav-toggle,
+.nav-toggle-label,
+.nav-mobile-menu {
+    display: none;
+}
+
+/* 모바일 반응형 (폭이 좁아질 때) */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 20px;
+    }
+
+    /* 왼쪽 정렬 & 양끝 배치 */
+    .nav-logo img {
+        margin-bottom: 0;
+        height: 23px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    /* 기존 메뉴 숨김 */
+
+    /* 햄버거 버튼 스타일 */
+    .nav-toggle-label {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .nav-toggle-label span,
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        display: block;
+        background: #333;
+        height: 2px;
+        width: 25px;
+        position: relative;
+    }
+
+    .nav-toggle-label span::before {
+        content: '';
+        position: absolute;
+        top: -8px;
+        width: 25px;
+        height: 2px;
+        background: #333;
+    }
+
+    .nav-toggle-label span::after {
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        width: 25px;
+        height: 2px;
+        background: #333;
+    }
+
+    /* 모바일 드롭다운 */
+    .nav-mobile-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        border-bottom: 1px solid #eee;
+    }
+
+    .nav-mobile-menu a {
+        display: block;
+        padding: 15px;
+        text-align: center;
+        border-top: 1px solid #f9f9f9;
+    }
+
+    /* 체크박스 체크 시 메뉴 표시 */
+    .nav-toggle:checked~.nav-mobile-menu {
+        display: block;
+    }
+}

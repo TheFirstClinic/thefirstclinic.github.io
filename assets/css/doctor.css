@@ -1,0 +1,90 @@
+.doctors-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.doctor-card {
+    display: flex;
+    gap: 40px;
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    align-items: flex-start;
+}
+
+.doctor-image img {
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-title {
+    color: #004c8c;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.doctor-name {
+    margin: 5px 0;
+    font-size: 2rem;
+    color: #222;
+}
+
+.doctor-headline {
+    font-size: 1.1rem;
+    color: #666;
+    font-style: italic;
+    border-left: 3px solid #004c8c;
+    padding-left: 15px;
+    margin: 20px 0;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.info-section h4 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.info-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.info-section li {
+    margin-bottom: 5px;
+}
+
+.specialties-tags span,
+.specialties-tags strong {
+    background: #eef2f6;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    margin-right: 5px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/* 모바일 대응 */
+@media (max-width: 768px) {
+    .doctor-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
