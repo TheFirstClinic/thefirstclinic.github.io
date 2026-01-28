@@ -1,0 +1,64 @@
+/* Clinic Info Section Responsive Styles */
+
+@media (max-width: 968px) {
+
+    /* 1. 세로 정렬로 변경 및 중앙 정렬 강제 */
+    div[style*="display: flex"][style*="gap: 60px"] {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 40px !important;
+        padding: 0 15px !important;
+    }
+
+    /* 2. 정보 테이블과 지도의 최소 너비 해제 및 중앙 배치 */
+    div[style*="min-width: 450px"] {
+        min-width: 0 !important;
+        width: 100% !important;
+        max-width: 550px !important;
+        margin: 0 auto !important;
+        box-sizing: border-box !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    /* 2-1. 테이블 wrapper를 중앙 정렬 */
+    div[style*="min-width: 450px"]>table {
+        margin: 0 auto !important;
+    }
+
+    /* 3. 지도 내부 요소가 화면 밖으로 나가지 않도록 강제 제어 */
+    .root_daum_roughmap,
+    .root_daum_roughmap .roughmap_canvas {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    /* 4. 제목 칸 너비 조절 (아이폰 글자 밀림 방지) */
+    td[style*="width: 110px"] {
+        width: 85px !important;
+        /* 110px에서 85px로 축소하여 주소 공간 확보 */
+        padding-right: 15px !important;
+    }
+
+    /* 5. 테이블 내부 정렬 유지 */
+    table {
+        margin: 0 auto;
+    }
+}
+
+/* 초소형 모바일 대응 (아이폰 SE 등 380px 이하) */
+@media (max-width: 380px) {
+    .phone-link p {
+        font-size: 1.1em !important;
+    }
+
+    td {
+        font-size: 0.95em !important;
+    }
+
+    /* 지도 높이를 살짝 줄여서 한 화면에 정보가 더 많이 들어오게 함 */
+    div[id^="daumRoughmapContainer"] {
+        height: 320px !important;
+    }
+}

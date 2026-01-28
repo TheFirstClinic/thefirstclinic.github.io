@@ -2,53 +2,56 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ site.title | default: "제일한의원" }}</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ site.title | default: "제일한의원" }}</title>
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="제일한의원 - 정교한 진단과 세심한 치료로 당신의 회복과 균형을 함께합니다. 서울 성북구 성신여대입구역 6번 출구 도보 3분.">
-    <meta name="keywords" content="제일한의원, 한의원, 성북구 한의원, 성신여대 한의원, 한방치료, 침, 한약">
-    <meta name="author" content="제일한의원">
-    <meta name="robots" content="index, follow">
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="제일한의원 - 정교한 진단과 세심한 치료로 당신의 회복과 균형을 함께합니다. 서울 성북구 성신여대입구역 6번 출구 도보 3분.">
+  <meta name="keywords" content="제일한의원, 한의원, 성북구 한의원, 성신여대 한의원, 한방치료, 침, 한약">
+  <meta name="author" content="제일한의원">
+  <meta name="robots" content="index, follow">
 
-    <!-- Google Search Console Verification -->
-    <meta name="google-site-verification" content="ZeEJwGNvzNfP578ggT8NQvgjVmF4PYnmnKK4Xy21_Eo" />
+  <!-- Google Search Console Verification -->
+  <meta name="google-site-verification" content="ZeEJwGNvzNfP578ggT8NQvgjVmF4PYnmnKK4Xy21_Eo" />
 
-    <!-- Open Graph (카카오톡, 페이스북 공유용) -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="제일한의원">
-    <meta property="og:description" content="정교한 진단과 세심한 치료로 당신의 회복과 균형을 함께합니다. 성신여대입구역 6번 출구 도보 3분.">
-    <meta property="og:url" content="{{ site.url }}">
-    <meta property="og:site_name" content="제일한의원">
-    <meta property="og:locale" content="ko_KR">
-    <meta property="og:image" content="{{ site.url }}/assets/img/og-image.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
+  <!-- Open Graph (카카오톡, 페이스북 공유용) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="제일한의원">
+  <meta property="og:description" content="정교한 진단과 세심한 치료로 당신의 회복과 균형을 함께합니다. 성신여대입구역 6번 출구 도보 3분.">
+  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:site_name" content="제일한의원">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:image" content="{{ site.url }}/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="제일한의원">
-    <meta name="twitter:description" content="정교한 진단과 세심한 치료로 당신의 회복과 균형을 함께합니다.">
-    <meta name="twitter:image" content="{{ site.url }}/assets/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="제일한의원">
+  <meta name="twitter:description" content="정교한 진단과 세심한 치료로 당신의 회복과 균형을 함께합니다.">
+  <meta name="twitter:image" content="{{ site.url }}/assets/img/og-image.jpg">
 
-    <!-- Canonical URL -->
-    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
 
-    <!-- Fonts -->
-    <link rel="stylesheet" as="style" crossorigin
-        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+  <!-- Fonts -->
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
 
-    <!-- Hero Section CSS -->
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/hero.css">
+  <!-- Logo CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/logo.css">
 
-    <!-- Logo CSS -->
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/logo.css">
+  <!-- Hero Section CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/hero.css">
 
-    <!-- Structured Data (JSON-LD) for Google -->
-    <script type="application/ld+json">
+  <!-- Clinic Info CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/clinic-info.css">
+
+  <!-- Structured Data (JSON-LD) for Google -->
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "MedicalBusiness",
@@ -97,30 +100,30 @@
     }
     </script>
 
-    <style>
-        body {
-            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fff;
-            color: #333;
-            line-height: 1.6;
-            font-size: 16px;
-        }
+  <style>
+    body {
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+      font-size: 16px;
+    }
 
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-    </style>
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  </style>
 </head>
 
 <body>
-    <main>
-        {{ content }}
-    </main>
+  <main>
+    {{ content }}
+  </main>
 
-    {% include footer.html %}
+  {% include footer.html %}
 </body>
 
 </html>
