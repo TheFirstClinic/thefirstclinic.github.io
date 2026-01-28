@@ -1,19 +1,16 @@
-<div style="display: flex; gap: 60px; margin: 60px 0 20px 0; padding: 0 20px; text-align: left; align-items: center;">
+<div class="clinic-info-container">
 
     <!-- Left: Information Table -->
-    <div style="flex: 1; min-width: 450px;">
-        <table style="width: 100%; border-collapse: collapse; line-height: 1.7;">
+    <div class="clinic-info-table-wrapper">
+        <table class="clinic-info-table">
 
             <!-- 오시는길 -->
-            <tr style="vertical-align: top;">
-                <td
-                    style="padding: 20px 30px 20px 0; font-size: 1.1em; font-weight: 600; color: #333; text-align: left;">
-                    오시는길</td>
-                <td style="padding: 20px 0; color: #333; text-align: left;">
-                    <a href="https://map.kakao.com/link/to/제일한의원,37.5927,127.0165" target="_blank"
-                        style="text-decoration: none; color: inherit;">
-                        <p style="margin: 0 0 8px 0;">서울시 성북구 아리랑로 28, 2층</p>
-                        <p style="font-size: 0.9em; color: #666; margin: 0;">
+            <tr>
+                <td class="info-title">오시는길</td>
+                <td class="info-content">
+                    <a href="https://map.kakao.com/link/to/제일한의원,37.5927,127.0165" target="_blank" class="info-link">
+                        <p>서울시 성북구 아리랑로 28, 2층</p>
+                        <p class="sub-text">
                             ※ 성신여대입구역 6번 출구 도보 3분<br>
                             &nbsp;&nbsp;&nbsp;(에스컬레이터 이용은 1, 4번 출구)
                         </p>
@@ -22,54 +19,47 @@
             </tr>
 
             <!-- 주차안내 -->
-            <tr style="vertical-align: top;">
-                <td
-                    style="padding: 20px 30px 20px 0; font-size: 1.1em; font-weight: 600; color: #333; text-align: left;">
-                    주차안내</td>
-                <td style="padding: 20px 0; color: #333; text-align: left;">
+            <tr>
+                <td class="info-title">주차안내</td>
+                <td class="info-content">
                     주차 공간 협소. 대중교통 이용 권장
                 </td>
             </tr>
 
             <!-- 진료시간 -->
-            <tr style="vertical-align: top;">
-                <td
-                    style="padding: 20px 30px 20px 0; font-size: 1.1em; font-weight: 600; color: #333; text-align: left;">
-                    진료시간</td>
-                <td style="padding: 20px 0; text-align: left;">
-                    <table style="width: 100%; border-collapse: collapse; color: #333;">
-                        <tr style="vertical-align: top;">
-                            <td style="padding: 3px 0px 3px 0; width: 90px; text-align: left; vertical-align: top;">평일
-                            </td>
-                            <td style="padding: 3px 0; text-align: left; vertical-align: top;">
+            <tr>
+                <td class="info-title">진료시간</td>
+                <td class="info-content">
+                    <table class="schedule-table">
+                        <tr>
+                            <td class="day-cell">평일</td>
+                            <td class="time-cell">
                                 09:00 - 18:00<br>
-                                <span style="font-size: 0.95em;">(화요일 20:00까지)</span>
+                                <span class="time-note">(화요일 20:00까지)</span>
                             </td>
                         </tr>
-                        <tr style="vertical-align: top;">
-                            <td style="padding: 3px 0px 3px 0; text-align: left; vertical-align: top;">토요일</td>
-                            <td style="padding: 3px 0; text-align: left; vertical-align: top;">09:00 - 14:00</td>
+                        <tr>
+                            <td class="day-cell">토요일</td>
+                            <td class="time-cell">09:00 - 14:00</td>
                         </tr>
-                        <tr style="vertical-align: top;">
-                            <td style="padding: 3px 0px 3px 0; text-align: left; vertical-align: top;">점심시간</td>
-                            <td style="padding: 3px 0; text-align: left; vertical-align: top;">
+                        <tr>
+                            <td class="day-cell">점심시간</td>
+                            <td class="time-cell">
                                 평일 13:00 - 14:00<br>
-                                <span style="font-size: 0.95em;">(토요일 제외)</span>
+                                <span class="time-note">(토요일 제외)</span>
                             </td>
                         </tr>
                     </table>
-                    <p style="font-size: 0.9em; color: #666; margin: 10px 0 0 0; text-align: left;">※ 일요일 · 공휴일 휴진</p>
+                    <p class="schedule-note">※ 일요일 · 공휴일 휴진</p>
                 </td>
             </tr>
 
             <!-- 문의전화 -->
-            <tr style="vertical-align: middle;">
-                <td
-                    style="padding: 20px 30px 20px 0; font-size: 1.1em; font-weight: 600; color: #333; text-align: left;">
-                    문의전화</td>
-                <td style="padding: 20px 0; text-align: left;">
-                    <a href="tel:02-926-3805" style="text-decoration: none; color: #333;">
-                        <p style="margin: 0; font-size: 1.3em; letter-spacing: 1px;">02-926-3805</p>
+            <tr class="valign-middle">
+                <td class="info-title">문의전화</td>
+                <td class="info-content">
+                    <a href="tel:02-926-3805" class="phone-link">
+                        <p>02-926-3805</p>
                     </a>
                 </td>
             </tr>
@@ -78,11 +68,9 @@
     </div>
 
     <!-- Right: Map -->
-    <div style="flex: 1.2; min-width: 450px;">
-        <div
-            style="width: 100%; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-            <div id="daumRoughmapContainer1769414770029" class="root_daum_roughmap root_daum_roughmap_landing"
-                style="width:100%;"></div>
+    <div class="clinic-info-map-wrapper">
+        <div class="map-container">
+            <div id="daumRoughmapContainer1769414770029" class="root_daum_roughmap root_daum_roughmap_landing"></div>
             <script charset="UTF-8" class="daum_roughmap_loader_script"
                 src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
             <script charset="UTF-8">

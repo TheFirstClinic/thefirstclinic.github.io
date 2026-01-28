@@ -1,0 +1,89 @@
+/* Footer Styles */
+
+/* ========== 기본 스타일 ========== */
+.site-footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.5;
+}
+
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ========== 데스크탑 버전 ========== */
+.footer-desktop {
+    margin: 0;
+    text-align: center;
+}
+
+.copyright-desktop {
+    margin-top: 15px;
+    font-size: 0.95em;
+    color: #999;
+    text-align: center;
+}
+
+/* ========== 모바일 버전 ========== */
+.footer-mobile {
+    display: none;
+    text-align: left;
+}
+
+.footer-mobile p {
+    margin: 5px 0;
+}
+
+.copyright-mobile {
+    display: none;
+    margin-top: 15px;
+    font-size: 0.95em;
+    color: #999;
+    text-align: left;
+}
+
+.copyright-mobile p {
+    margin: 3px 0;
+}
+
+/* ========== 반응형: 데스크탑 ========== */
+@media (min-width: 769px) {
+    .footer-desktop {
+        display: block;
+    }
+
+    .footer-mobile {
+        display: none;
+    }
+
+    .copyright-desktop {
+        display: block;
+    }
+
+    .copyright-mobile {
+        display: none;
+    }
+}
+
+/* ========== 반응형: 모바일 ========== */
+@media (max-width: 768px) {
+    .footer-desktop {
+        display: none;
+    }
+
+    .footer-mobile {
+        display: block;
+    }
+
+    .copyright-desktop {
+        display: none;
+    }
+
+    .copyright-mobile {
+        display: block;
+    }
+}
