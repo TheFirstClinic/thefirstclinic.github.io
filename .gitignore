@@ -1,0 +1,20 @@
+# Jekyll build output
+_site/
+
+# Jekyll cache files
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby dependencies and bundle config
+.bundle/
+vendor/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE/Editor folders
+.vscode/
+.idea/
