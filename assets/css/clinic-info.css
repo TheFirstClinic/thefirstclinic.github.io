@@ -1,9 +1,15 @@
 /* Clinic Info Section Responsive Styles */
 
-/* 데스크탑 기본 스타일 (미디어 쿼리 밖) */
-td[style*="width: 110px"] {
+/* 1. 데스크탑: 모든 제목 칸 너비 통일 */
+.info-title,
+td[style*="font-weight: 600"] {
     min-width: 110px !important;
     width: 110px !important;
+    padding: 20px 0 !important;
+    font-size: 1.1em !important;
+    font-weight: 600 !important;
+    color: #333 !important;
+    text-align: left !important;
 }
 
 @media (max-width: 968px) {
@@ -40,13 +46,23 @@ td[style*="width: 110px"] {
         min-width: 0 !important;
     }
 
-    /* 4. 제목 칸 너비 조절 및 간격 축소 */
+    /* 5. 제목 칸 너비 조절 및 간격 축소 */
     td[style*="width: 110px"] {
-        width: 75px !important;
-        padding-right: 10px !important;
+        width: 80px !important;
+        min-width: 80px !important;
+        padding-right: 5px !important;
+        font-size: 0.95em !important;
+        white-space: nowrap;
     }
 
-    /* 6. 테이블 내부 정렬 유지 */
+    /* 6. 진료시간 테이블 내부의 '평일', '토요일' 칸도 함께 축소 */
+    table[style*="color: #333"] td:first-child {
+        width: 70px !important;
+        /* 내부 간격도 최적화 */
+        padding-right: 5px !important;
+    }
+
+    /* 7. 테이블 내부 정렬 유지 */
     table {
         margin: 0 auto;
     }
@@ -64,7 +80,7 @@ td[style*="width: 110px"] {
 
     /* 제목 칸을 더 축소 */
     td[style*="width: 110px"] {
-        width: 70px !important;
+        width: 60px !important;
         padding-right: 8px !important;
     }
 

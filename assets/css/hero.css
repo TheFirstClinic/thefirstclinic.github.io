@@ -83,7 +83,7 @@
 }
 
 .hero-sub {
-    font-size: clamp(1.1rem, 2.8vw, 24px);
+    font-size: clamp(1rem, 2.6vw, 24px);
     color: #222;
     line-height: 1.6;
     font-weight: 700;
@@ -115,6 +115,11 @@
         max-width: 600px;
         /* 큰 화면에서는 조금 더 넓게 */
     }
+
+    .hero-sub {
+        white-space: normal;
+        /* 데스크탑에서는 자연스럽게 줄바꿈 허용 */
+    }
 }
 
 /* Very small mobile */
@@ -124,7 +129,7 @@
     }
 
     .hero-sub {
-        font-size: 1.05rem;
+        font-size: 0.95rem;
     }
 
     .hero-text-container {
@@ -143,7 +148,6 @@
 
     .hero-text-wrapper {
         max-width: 90%;
-        /* 작은 화면에서는 대부분의 공간 사용 */
     }
 }
 
