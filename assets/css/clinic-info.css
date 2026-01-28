@@ -1,5 +1,11 @@
 /* Clinic Info Section Responsive Styles */
 
+/* 데스크탑 기본 스타일 (미디어 쿼리 밖) */
+td[style*="width: 110px"] {
+    min-width: 110px !important;
+    width: 110px !important;
+}
+
 @media (max-width: 968px) {
 
     /* 1. 세로 정렬로 변경 및 중앙 정렬 강제 */
@@ -22,26 +28,25 @@
         justify-content: center !important;
     }
 
-    /* 2-1. 테이블 wrapper를 중앙 정렬 */
+    /* 3. 테이블 wrapper를 중앙 정렬 */
     div[style*="min-width: 450px"]>table {
         margin: 0 auto !important;
     }
 
-    /* 3. 지도 내부 요소가 화면 밖으로 나가지 않도록 강제 제어 */
+    /* 4. 지도 내부 요소가 화면 밖으로 나가지 않도록 강제 제어 */
     .root_daum_roughmap,
     .root_daum_roughmap .roughmap_canvas {
         width: 100% !important;
         min-width: 0 !important;
     }
 
-    /* 4. 제목 칸 너비 조절 (아이폰 글자 밀림 방지) */
+    /* 4. 제목 칸 너비 조절 및 간격 축소 */
     td[style*="width: 110px"] {
-        width: 85px !important;
-        /* 110px에서 85px로 축소하여 주소 공간 확보 */
-        padding-right: 15px !important;
+        width: 75px !important;
+        padding-right: 10px !important;
     }
 
-    /* 5. 테이블 내부 정렬 유지 */
+    /* 6. 테이블 내부 정렬 유지 */
     table {
         margin: 0 auto;
     }
@@ -55,6 +60,12 @@
 
     td {
         font-size: 0.95em !important;
+    }
+
+    /* 제목 칸을 더 축소 */
+    td[style*="width: 110px"] {
+        width: 70px !important;
+        padding-right: 8px !important;
     }
 
     /* 지도 높이를 살짝 줄여서 한 화면에 정보가 더 많이 들어오게 함 */
