@@ -39,14 +39,14 @@
 }
 
 .hero-wide-title {
-    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    font-size: clamp(1.4rem, 4.5vw, 2.8rem);
     font-weight: 800;
     margin-bottom: 15px;
     letter-spacing: -1px;
 }
 
 .hero-wide-sub {
-    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    font-size: clamp(0.9rem, 2.5vw, 1.25rem);
     opacity: 0.9;
     font-weight: 400;
 }
@@ -54,5 +54,24 @@
 @media (max-width: 768px) {
     .hero-wide {
         height: 200px;
+    }
+
+    /* Mobile-specific title sizing to prevent line breaks */
+    .hero-wide-title {
+        font-size: clamp(1.2rem, 5vw, 1.8rem);
+        letter-spacing: -0.5px;
+        white-space: nowrap;
+    }
+
+    .hero-wide-sub {
+        font-size: clamp(0.9rem, 3vw, 1.2rem);
+    }
+}
+
+/* For very small screens (< 360px) */
+@media (max-width: 360px) {
+    .hero-wide-title {
+        font-size: 1.15rem;
+        letter-spacing: -0.3px;
     }
 }
