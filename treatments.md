@@ -44,7 +44,7 @@ permalink: /treatments
                 <h2>미용 한방</h2>
             </div>
             <ul class="treatment-list">
-                <li>매선 / 피부</li>
+                <li>피부 시술</li>
                 <li>체형 관리</li>
             </ul>
         </div>
