@@ -17,4 +17,3 @@ lang: ko-KR
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-feed
