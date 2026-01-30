@@ -11,7 +11,7 @@ owner: "황지영"
 phone: "02-926-3805"
 
 # Language settings
-lang: ko_KR
+lang: ko-KR
 
 # Plugins (GitHub Pages에서 자동 지원)
 plugins:
