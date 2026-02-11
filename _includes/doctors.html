@@ -1,9 +1,11 @@
 <section class="doctors-container">
     {% for doctor in site.data.doctors %}
     <div class="doctor-card">
+        {% if doctor.image != "" %}
         <div class="doctor-image">
             <img src="{{ doctor.image }}" alt="{{ doctor.name }} {{ doctor.title }}" loading="lazy">
         </div>
+        {% endif %}
         <div class="doctor-info">
             <span class="doctor-title">{{ doctor.title }}</span>
             <h2 class="doctor-name">{{ doctor.name }}</h2>
