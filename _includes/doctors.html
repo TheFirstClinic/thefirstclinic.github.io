@@ -24,11 +24,20 @@
                 </div>
             </div>
 
+            {% if doctor.publications %}
+            <div class="info-section">
+                <h4>저서</h4>
+                <ul>
+                    {% for pub in doctor.publications %}<li>{{ pub }}</li>{% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+
             <div class="info-section">
                 <h4>전문 분야 및 자격</h4>
                 <p class="specialties-tags">
                     {% for spec in doctor.specialties %}<span>#{{ spec }}</span> {% endfor %}
-                    {% for cert in doctor.certificates %}<strong>#{{ cert }}</strong>{% endfor %}
+                    {% for cert in doctor.certificates %}<span>#{{ cert }}</span>{% endfor %}
                 </p>
             </div>
         </div>
