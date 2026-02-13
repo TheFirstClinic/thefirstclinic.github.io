@@ -1,0 +1,165 @@
+/* ========================================
+   Floating Contact Bar
+   ======================================== */
+
+/* ========== 모바일: 하단 고정 가로 바 (768px 이하) ========== */
+.floating-bar-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    /* 모바일 바 하단 여백 확보 */
+    body {
+        padding-bottom: 64px;
+    }
+
+    .floating-bar-mobile {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+        background: #fff;
+        border-top: 1px solid #e8e8e8;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 999;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .floating-bar-mobile.fb-hidden {
+        transform: translateY(100%);
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .fb-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+        flex: 1;
+        height: 100%;
+        color: #555;
+        text-decoration: none;
+        font-size: 11px;
+        font-weight: 500;
+        transition: color 0.2s ease;
+    }
+
+    .fb-item:active {
+        color: #283a88;
+    }
+
+    .fb-item svg {
+        flex-shrink: 0;
+    }
+
+    /* 예약 버튼 강조 */
+    .fb-item--booking {
+        background: #283a88;
+        color: #fff;
+        border-radius: 0;
+    }
+
+    .fb-item--booking:active {
+        background: #1e2d6b;
+        color: #fff;
+    }
+
+    .fb-item--booking span {
+        font-weight: 600;
+    }
+}
+
+/* ========== 데스크톱: 우측 하단 세로 플로팅 (769px 이상) ========== */
+.floating-bar-desktop {
+    display: none;
+}
+
+@media (min-width: 769px) {
+    .floating-bar-desktop {
+        position: fixed;
+        bottom: 32px;
+        right: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        z-index: 999;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .floating-bar-desktop.fb-hidden {
+        opacity: 0;
+        transform: translateY(16px);
+        pointer-events: none;
+    }
+
+    .fb-btn {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: #fff;
+        color: #444;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+    }
+
+    .fb-btn:hover {
+        background: #f5f5f5;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+        transform: scale(1.05);
+    }
+
+    /* 예약 버튼 브랜드 컬러 */
+    .fb-btn--booking {
+        background: #283a88;
+        color: #fff;
+    }
+
+    .fb-btn--booking:hover {
+        background: #1e2d6b;
+        color: #fff;
+    }
+
+    /* 툴팁 */
+    .fb-tooltip {
+        position: absolute;
+        right: calc(100% + 10px);
+        top: 50%;
+        transform: translateY(-50%);
+        background: #333;
+        color: #fff;
+        font-size: 13px;
+        font-weight: 500;
+        white-space: nowrap;
+        padding: 6px 12px;
+        border-radius: 6px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.2s ease, transform 0.2s ease;
+        transform: translateY(-50%) translateX(4px);
+    }
+
+    .fb-tooltip::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translateY(-50%);
+        border: 5px solid transparent;
+        border-left-color: #333;
+    }
+
+    .fb-btn:hover .fb-tooltip {
+        opacity: 1;
+        transform: translateY(-50%) translateX(0);
+    }
+}
