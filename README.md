@@ -53,6 +53,10 @@ bundle exec jekyll serve
 - 서버 실행 후 브라우저에서 http://127.0.0.1:4000 주소로 접속하세요.
 - 파일 수정 시 자동으로 다시 빌드되며, 브라우저 새로고침을 통해 결과를 확인할 수 있습니다.
 
+## 브랜드 아이덴티티
+
+브랜드 스토리 및 CI 가이드는 [_design/BRAND.md](_design/BRAND.md)를 참고하세요.
+
 ## 프로젝트 구조
 
 - _includes/: Header, Footer, Kakao Map 등 공통 UI 컴포넌트
